@@ -1,31 +1,31 @@
-let saldoVitorias = calcularSaldo(35, 0)
-let nivel = definirNivel(saldoVitorias)
+let saldoVitorias = calcularSaldo(35, 0);
+let nivel = definirNivel(saldoVitorias);
 
 function calcularSaldo(vitorias, derrotas){
-    return vitorias - derrotas
+    return vitorias - derrotas;
 }
 
 function definirNivel(saldoVitorias){
     if (saldoVitorias <= 10){
-        return "Ferro"
+        return "Ferro";
     }
     else if (saldoVitorias <= 20){
-        return "Bronze"
+        return "Bronze";
     }
     else if (saldoVitorias <= 50){
-        return "Prata"
+        return "Prata";
     }
     else if (saldoVitorias <= 80){
-        return "Ouro"  
+        return "Ouro";  
     }
     else if (saldoVitorias <= 90){
-        return "Diamante"
+        return "Diamante";
     }
     else if (saldoVitorias <= 100){
-        return "Lendário"
+        return "Lendário";
     }
     else {
-        return "Imortal"
+        return "Imortal";
     }
 }
 
